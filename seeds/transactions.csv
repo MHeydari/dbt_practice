@@ -1,0 +1,5 @@
+txn_id,account_id,txn_date,amount,txn_type
+50001,1001,2021-01-10,2500,Deposit
+50002,1001,2021-02-15,-200,Withdrawal
+50003,1002,2021-03-05,10000,Deposit
+50004,1003,2021-03-20,-50,Withdrawal

@@ -1,0 +1,11 @@
+name: 'dbt_practice'
+version: '1.0'
+profile: 'banking_profile'
+config-version: 2
+
+models:
+  banking_dbt_project:
+    staging:
+      materialized: view
+    marts:
+      materialized: table

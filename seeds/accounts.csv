@@ -1,0 +1,4 @@
+account_id,customer_id,account_type,open_date
+1001,1,Checking,2020-01-16
+1002,2,Savings,2019-07-25
+1003,3,Checking,2021-03-11
