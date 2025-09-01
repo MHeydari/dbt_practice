@@ -1,5 +1,10 @@
 # DBT Practice
-This is a sample of [Data Build Tool project](https://github.com/dbt-labs/dbt-core) for practicing data transformations
+This is a sample of [Data Build Tool project](https://github.com/dbt-labs/dbt-core) for practicing data transformations.
+
+DBT focuses on transformations (the “T” in ELT) by letting us write SQL models and organize them in a structured way.
+DBT helps data teams transform raw data into analytics-ready datasets inside a data warehouse (like Snowflake, BigQuery, Redshift, or Postgres)
+Extract + Load data into warehouse is done by another tools like Fivetran, Airbyte, or custom pipelines.
+To create a working sample, first we create some row data samples inside DuckDB (using CSV files), then we practice some basic transformations.
 
 ## How to install it:
     pip install dbt-duckdb
@@ -77,3 +82,42 @@ dbt generates an HTML site with:
 
 ✅ After this step, we can explore the project visually
 
+## Sample output
+Now we can query some results inside the DB (here using DuckDB CLI) 
+Running this query
+
+    select *
+    from daily_account_balances
+    where account_id = 1001
+    order by date_day
+    limit 20;
+
+Will be:
+
+    ┌────────────┬────────────┬─────────┐
+    │  date_day  │ account_id │ balance │
+    │    date    │   int32    │ int128  │
+    ├────────────┼────────────┼─────────┤
+    │ 2021-01-01 │       1001 │       0 │
+    │ 2021-01-02 │       1001 │       0 │
+    │ 2021-01-03 │       1001 │       0 │
+    │ 2021-01-04 │       1001 │       0 │
+    │ 2021-01-05 │       1001 │       0 │
+    │ 2021-01-06 │       1001 │       0 │
+    │ 2021-01-07 │       1001 │       0 │
+    │ 2021-01-08 │       1001 │       0 │
+    │ 2021-01-09 │       1001 │       0 │
+    │ 2021-01-10 │       1001 │    2500 │
+    │ 2021-01-11 │       1001 │    2500 │
+    │ 2021-01-12 │       1001 │    2500 │
+    │ 2021-01-13 │       1001 │    2500 │
+    │ 2021-01-14 │       1001 │    2500 │
+    │ 2021-01-15 │       1001 │    2500 │
+    │ 2021-01-16 │       1001 │    2500 │
+    │ 2021-01-17 │       1001 │    2500 │
+    │ 2021-01-18 │       1001 │    2500 │
+    │ 2021-01-19 │       1001 │    2500 │
+    │ 2021-01-20 │       1001 │    2500 │
+    ├────────────┴────────────┴─────────┤
+    │ 20 rows                 3 columns │
+    └───────────────────────────────────┘
