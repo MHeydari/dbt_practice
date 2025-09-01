@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "banking"."main"."transactions";
+    -- dbt seed --
+    
+          COPY "banking"."main"."transactions" FROM 'D:\workspace\github\dbt_practice\seeds\transactions.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

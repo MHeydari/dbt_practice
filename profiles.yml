@@ -5,3 +5,4 @@ banking_profile:
       type: duckdb
       path: banking.duckdb
       schema: main
+      

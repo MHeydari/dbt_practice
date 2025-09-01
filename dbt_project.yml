@@ -4,7 +4,7 @@ profile: 'banking_profile'
 config-version: 2
 
 models:
-  banking_dbt_project:
+  dbt_practice:
     staging:
       materialized: view
     marts:
