@@ -1,22 +1,22 @@
 # DBT Practice
 This is a sample of [Data Build Tool project](https://github.com/dbt-labs/dbt-core) for practicing data transformations.
 
-DBT focuses on transformations (the “T” in ELT) by letting us write SQL models and organize them in a structured way.
-DBT helps data teams transform raw data into analytics-ready datasets inside a data warehouse (like Snowflake, BigQuery, Redshift, or Postgres)
-Extract + Load data into warehouse is done by another tools like Fivetran, Airbyte, or custom pipelines.
-To create a working sample, first we create some row data samples inside DuckDB (using CSV files), then we practice some basic transformations.
+DBT focuses on transformations (the “T” in ELT) by letting us write SQL models and organize them in a structured approach.
+DBT helps data teams transform raw data into analytics-ready datasets inside a data warehouse (like Snowflake, BigQuery, Redshift, or Postgres) </br>
+Extracting and loading data into the warehouse is typically done using tools like Fivetran, Airbyte, or custom pipelines.</br>
+To create a working sample, first, we make some row data samples inside DuckDB (using CSV files), then we practice some basic transformations.
 
-## How to install it:
+## How to prepare the dependencies and environment:
     pip install dbt-duckdb
 
-## How to run it:
+## How to run the project:
     dbt seed
     dbt run
     dbt test    
     dbt docs generate
     dbt docs serve
 
-### End-to-End Steps in the project 
+## Explaining the End-to-End steps
 **1. Seed**: Load raw CSVs into DuckDB 
 
     dbt seed
@@ -83,8 +83,8 @@ dbt generates an HTML site with:
 ✅ After this step, we can explore the project visually
 
 ## Sample output
-Now we can query some results inside the DB (here using DuckDB CLI) 
-Running this query
+Now we can query some results inside the DB (using DuckDB CLI). <be>
+Running
 
     select *
     from daily_account_balances
@@ -92,7 +92,7 @@ Running this query
     order by date_day
     limit 20;
 
-Will be:
+Will result in:
 
     ┌────────────┬────────────┬─────────┐
     │  date_day  │ account_id │ balance │
