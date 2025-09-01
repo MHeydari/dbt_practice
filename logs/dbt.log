@@ -1964,3 +1964,1156 @@ with relations AS (
 [0m19:22:40.200066 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'D:\\workspace\\github\\dbt_practice', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt docs serve', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_path': 'D:\\workspace\\github\\dbt_practice\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
 [0m19:22:40.374316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ee566f5e-6b27-4f65-88fe-d785e00c1946', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023782A77A80>]}
 [0m19:22:40.423131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ee566f5e-6b27-4f65-88fe-d785e00c1946', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002378466ECF0>]}
+[0m17:21:36.043612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB10E70980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB11D7BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB11D7B890>]}
+
+
+============================== 17:21:36.066325 | a6d4442b-0508-4deb-ba82-dc09d52b7168 ==============================
+[0m17:21:36.066325 [info ] [MainThread]: Running with dbt=1.10.10
+[0m17:21:36.067438 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt seed', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'log_path': 'D:\\workspace\\github\\dbt_practice\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'D:\\workspace\\github\\dbt_practice'}
+[0m17:21:36.435219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a6d4442b-0508-4deb-ba82-dc09d52b7168', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB11077A80>]}
+[0m17:21:36.482747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a6d4442b-0508-4deb-ba82-dc09d52b7168', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB11C72BE0>]}
+[0m17:21:36.506579 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m17:21:36.829761 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m17:21:38.021188 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m17:21:38.021656 [debug] [MainThread]: Partial parsing: added file: dbt_practice://models\marts\core\daily_account_balances.sql
+[0m17:21:38.021968 [debug] [MainThread]: Partial parsing: updated file: dbt_practice://macros\custom_macros.sql
+[0m17:21:38.223059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a6d4442b-0508-4deb-ba82-dc09d52b7168', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB13325950>]}
+[0m17:21:38.278097 [debug] [MainThread]: Wrote artifact WritableManifest to D:\workspace\github\dbt_practice\target\manifest.json
+[0m17:21:38.294074 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\workspace\github\dbt_practice\target\semantic_manifest.json
+[0m17:21:38.578221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a6d4442b-0508-4deb-ba82-dc09d52b7168', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB130E96D0>]}
+[0m17:21:38.578946 [info ] [MainThread]: Found 7 models, 3 seeds, 8 data tests, 431 macros
+[0m17:21:38.579815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a6d4442b-0508-4deb-ba82-dc09d52b7168', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB13569EF0>]}
+[0m17:21:38.581901 [info ] [MainThread]: 
+[0m17:21:38.582395 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:21:38.582831 [info ] [MainThread]: 
+[0m17:21:38.583416 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m17:21:38.587409 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_banking'
+[0m17:21:41.242289 [debug] [ThreadPool]: Using duckdb connection "list_banking"
+[0m17:21:41.242629 [debug] [ThreadPool]: On list_banking: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "list_banking"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"banking"'
+    
+  
+  
+[0m17:21:41.242856 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:21:41.270328 [debug] [ThreadPool]: SQL status: OK in 0.027 seconds
+[0m17:21:41.271425 [debug] [ThreadPool]: On list_banking: Close
+[0m17:21:41.272100 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_banking, now create_banking_main)
+[0m17:21:41.272449 [debug] [ThreadPool]: Creating schema "database: "banking"
+schema: "main"
+"
+[0m17:21:41.277182 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:21:41.277414 [debug] [ThreadPool]: On create_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "create_banking_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='banking'
+        and type='sqlite'
+    
+  
+[0m17:21:41.277610 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:21:41.278212 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:21:41.279092 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:21:41.279308 [debug] [ThreadPool]: On create_banking_main: BEGIN
+[0m17:21:41.279605 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:21:41.279809 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:21:41.279990 [debug] [ThreadPool]: On create_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "create_banking_main"} */
+
+    
+    
+        create schema if not exists "banking"."main"
+    
+[0m17:21:41.280331 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:21:41.280907 [debug] [ThreadPool]: On create_banking_main: COMMIT
+[0m17:21:41.281253 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:21:41.281450 [debug] [ThreadPool]: On create_banking_main: COMMIT
+[0m17:21:41.281745 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:21:41.281949 [debug] [ThreadPool]: On create_banking_main: Close
+[0m17:21:41.283610 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_banking_main'
+[0m17:21:41.287550 [debug] [ThreadPool]: Using duckdb connection "list_banking_main"
+[0m17:21:41.287775 [debug] [ThreadPool]: On list_banking_main: BEGIN
+[0m17:21:41.287966 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:21:41.288424 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:21:41.288648 [debug] [ThreadPool]: Using duckdb connection "list_banking_main"
+[0m17:21:41.288844 [debug] [ThreadPool]: On list_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "list_banking_main"} */
+select
+      'banking' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'banking'
+  
+[0m17:21:41.300376 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m17:21:41.301357 [debug] [ThreadPool]: On list_banking_main: ROLLBACK
+[0m17:21:41.323067 [debug] [ThreadPool]: Failed to rollback 'list_banking_main'
+[0m17:21:41.323868 [debug] [ThreadPool]: On list_banking_main: Close
+[0m17:21:41.325545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a6d4442b-0508-4deb-ba82-dc09d52b7168', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB13582DD0>]}
+[0m17:21:41.325897 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:21:41.326103 [debug] [MainThread]: On master: BEGIN
+[0m17:21:41.326283 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:21:41.326646 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:21:41.326842 [debug] [MainThread]: On master: COMMIT
+[0m17:21:41.327016 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:21:41.327183 [debug] [MainThread]: On master: COMMIT
+[0m17:21:41.327491 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:21:41.327763 [debug] [MainThread]: On master: Close
+[0m17:21:41.369493 [debug] [Thread-1 (]: Began running node seed.dbt_practice.accounts
+[0m17:21:41.370378 [info ] [Thread-1 (]: 1 of 3 START seed file main.accounts ........................................... [RUN]
+[0m17:21:41.371976 [debug] [Thread-1 (]: Acquiring new duckdb connection 'seed.dbt_practice.accounts'
+[0m17:21:41.372426 [debug] [Thread-1 (]: Began compiling node seed.dbt_practice.accounts
+[0m17:21:41.372772 [debug] [Thread-1 (]: Began executing node seed.dbt_practice.accounts
+[0m17:21:41.393933 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.accounts"
+[0m17:21:41.394259 [debug] [Thread-1 (]: On seed.dbt_practice.accounts: BEGIN
+[0m17:21:41.394507 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:21:41.395259 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m17:21:41.395515 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.accounts"
+[0m17:21:41.395739 [debug] [Thread-1 (]: On seed.dbt_practice.accounts: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "seed.dbt_practice.accounts"} */
+truncate table "banking"."main"."accounts"
+[0m17:21:41.396363 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:21:41.404844 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.accounts"
+[0m17:21:41.405125 [debug] [Thread-1 (]: On seed.dbt_practice.accounts: 
+          COPY "banking"."main"."accounts" FROM 'D:\workspace\github\dbt_practice\seeds\accounts.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m17:21:41.410187 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m17:21:41.414536 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_practice.accounts"
+[0m17:21:41.422744 [debug] [Thread-1 (]: On seed.dbt_practice.accounts: COMMIT
+[0m17:21:41.423176 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.accounts"
+[0m17:21:41.423458 [debug] [Thread-1 (]: On seed.dbt_practice.accounts: COMMIT
+[0m17:21:41.430290 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m17:21:41.431703 [debug] [Thread-1 (]: On seed.dbt_practice.accounts: Close
+[0m17:21:41.441299 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a6d4442b-0508-4deb-ba82-dc09d52b7168', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB137C0B90>]}
+[0m17:21:41.441763 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file main.accounts ....................................... [[32mINSERT 3[0m in 0.06s]
+[0m17:21:41.442506 [debug] [Thread-1 (]: Finished running node seed.dbt_practice.accounts
+[0m17:21:41.442804 [debug] [Thread-1 (]: Began running node seed.dbt_practice.customers
+[0m17:21:41.443141 [info ] [Thread-1 (]: 2 of 3 START seed file main.customers .......................................... [RUN]
+[0m17:21:41.443730 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_practice.accounts, now seed.dbt_practice.customers)
+[0m17:21:41.443999 [debug] [Thread-1 (]: Began compiling node seed.dbt_practice.customers
+[0m17:21:41.444239 [debug] [Thread-1 (]: Began executing node seed.dbt_practice.customers
+[0m17:21:41.447964 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.customers"
+[0m17:21:41.448223 [debug] [Thread-1 (]: On seed.dbt_practice.customers: BEGIN
+[0m17:21:41.448446 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:21:41.448915 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:21:41.449144 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.customers"
+[0m17:21:41.449367 [debug] [Thread-1 (]: On seed.dbt_practice.customers: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "seed.dbt_practice.customers"} */
+truncate table "banking"."main"."customers"
+[0m17:21:41.449894 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:21:41.450694 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.customers"
+[0m17:21:41.450941 [debug] [Thread-1 (]: On seed.dbt_practice.customers: 
+          COPY "banking"."main"."customers" FROM 'D:\workspace\github\dbt_practice\seeds\customers.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m17:21:41.453232 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:21:41.453785 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_practice.customers"
+[0m17:21:41.455299 [debug] [Thread-1 (]: On seed.dbt_practice.customers: COMMIT
+[0m17:21:41.455560 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.customers"
+[0m17:21:41.456011 [debug] [Thread-1 (]: On seed.dbt_practice.customers: COMMIT
+[0m17:21:41.460966 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m17:21:41.461581 [debug] [Thread-1 (]: On seed.dbt_practice.customers: Close
+[0m17:21:41.462006 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a6d4442b-0508-4deb-ba82-dc09d52b7168', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB13814310>]}
+[0m17:21:41.462514 [info ] [Thread-1 (]: 2 of 3 OK loaded seed file main.customers ...................................... [[32mINSERT 3[0m in 0.02s]
+[0m17:21:41.463216 [debug] [Thread-1 (]: Finished running node seed.dbt_practice.customers
+[0m17:21:41.463620 [debug] [Thread-1 (]: Began running node seed.dbt_practice.transactions
+[0m17:21:41.464012 [info ] [Thread-1 (]: 3 of 3 START seed file main.transactions ....................................... [RUN]
+[0m17:21:41.464846 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.dbt_practice.customers, now seed.dbt_practice.transactions)
+[0m17:21:41.465111 [debug] [Thread-1 (]: Began compiling node seed.dbt_practice.transactions
+[0m17:21:41.465350 [debug] [Thread-1 (]: Began executing node seed.dbt_practice.transactions
+[0m17:21:41.469023 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.transactions"
+[0m17:21:41.469332 [debug] [Thread-1 (]: On seed.dbt_practice.transactions: BEGIN
+[0m17:21:41.469599 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:21:41.470117 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:21:41.470369 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.transactions"
+[0m17:21:41.470588 [debug] [Thread-1 (]: On seed.dbt_practice.transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "seed.dbt_practice.transactions"} */
+truncate table "banking"."main"."transactions"
+[0m17:21:41.471155 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:21:41.472177 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.transactions"
+[0m17:21:41.472641 [debug] [Thread-1 (]: On seed.dbt_practice.transactions: 
+          COPY "banking"."main"."transactions" FROM 'D:\workspace\github\dbt_practice\seeds\transactions.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m17:21:41.475078 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:21:41.475535 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.dbt_practice.transactions"
+[0m17:21:41.477090 [debug] [Thread-1 (]: On seed.dbt_practice.transactions: COMMIT
+[0m17:21:41.477477 [debug] [Thread-1 (]: Using duckdb connection "seed.dbt_practice.transactions"
+[0m17:21:41.477724 [debug] [Thread-1 (]: On seed.dbt_practice.transactions: COMMIT
+[0m17:21:41.481045 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m17:21:41.481616 [debug] [Thread-1 (]: On seed.dbt_practice.transactions: Close
+[0m17:21:41.482013 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a6d4442b-0508-4deb-ba82-dc09d52b7168', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB11EBD810>]}
+[0m17:21:41.482390 [info ] [Thread-1 (]: 3 of 3 OK loaded seed file main.transactions ................................... [[32mINSERT 4[0m in 0.02s]
+[0m17:21:41.483021 [debug] [Thread-1 (]: Finished running node seed.dbt_practice.transactions
+[0m17:21:41.484274 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:21:41.484530 [debug] [MainThread]: On master: BEGIN
+[0m17:21:41.484723 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:21:41.485138 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:21:41.485348 [debug] [MainThread]: On master: COMMIT
+[0m17:21:41.485524 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:21:41.485712 [debug] [MainThread]: On master: COMMIT
+[0m17:21:41.486034 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:21:41.486248 [debug] [MainThread]: On master: Close
+[0m17:21:41.486500 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:21:41.486667 [debug] [MainThread]: Connection 'create_banking_main' was properly closed.
+[0m17:21:41.486824 [debug] [MainThread]: Connection 'list_banking_main' was properly closed.
+[0m17:21:41.486970 [debug] [MainThread]: Connection 'seed.dbt_practice.transactions' was properly closed.
+[0m17:21:41.487172 [info ] [MainThread]: 
+[0m17:21:41.487478 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 2.90 seconds (2.90s).
+[0m17:21:41.488311 [debug] [MainThread]: Command end result
+[0m17:21:41.504310 [debug] [MainThread]: Wrote artifact WritableManifest to D:\workspace\github\dbt_practice\target\manifest.json
+[0m17:21:41.506608 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\workspace\github\dbt_practice\target\semantic_manifest.json
+[0m17:21:41.511879 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\workspace\github\dbt_practice\target\run_results.json
+[0m17:21:41.512186 [info ] [MainThread]: 
+[0m17:21:41.512680 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:21:41.513184 [info ] [MainThread]: 
+[0m17:21:41.513856 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m17:21:41.514733 [debug] [MainThread]: Command `dbt seed` succeeded at 17:21:41.514635 after 5.56 seconds
+[0m17:21:41.515074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB13193C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB1386D550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CB11D834D0>]}
+[0m17:21:41.515333 [debug] [MainThread]: Flushing usage events
+[0m17:21:43.008649 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:24:31.611882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0AE80980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0BD8BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0BD8B890>]}
+
+
+============================== 17:24:31.615546 | 6be047e6-fda8-4f53-b409-efeff0b5945a ==============================
+[0m17:24:31.615546 [info ] [MainThread]: Running with dbt=1.10.10
+[0m17:24:31.616246 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'use_experimental_parser': 'False', 'quiet': 'False', 'printer_width': '80', 'log_path': 'D:\\workspace\\github\\dbt_practice\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'D:\\workspace\\github\\dbt_practice'}
+[0m17:24:31.783266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0B087A80>]}
+[0m17:24:31.834846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0BC82BE0>]}
+[0m17:24:31.837029 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m17:24:32.061450 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m17:24:32.199933 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:24:32.200268 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:24:32.238333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0D410E50>]}
+[0m17:24:32.294577 [debug] [MainThread]: Wrote artifact WritableManifest to D:\workspace\github\dbt_practice\target\manifest.json
+[0m17:24:32.296609 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\workspace\github\dbt_practice\target\semantic_manifest.json
+[0m17:24:32.314206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0D1EB4D0>]}
+[0m17:24:32.314562 [info ] [MainThread]: Found 7 models, 3 seeds, 8 data tests, 431 macros
+[0m17:24:32.315069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0BEDFA10>]}
+[0m17:24:32.316507 [info ] [MainThread]: 
+[0m17:24:32.316995 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:24:32.317277 [info ] [MainThread]: 
+[0m17:24:32.317678 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m17:24:32.321583 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_banking'
+[0m17:24:32.403265 [debug] [ThreadPool]: Using duckdb connection "list_banking"
+[0m17:24:32.403616 [debug] [ThreadPool]: On list_banking: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "list_banking"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"banking"'
+    
+  
+  
+[0m17:24:32.403847 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:24:32.425951 [debug] [ThreadPool]: SQL status: OK in 0.022 seconds
+[0m17:24:32.427082 [debug] [ThreadPool]: On list_banking: Close
+[0m17:24:32.427705 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_banking, now create_banking_main)
+[0m17:24:32.428054 [debug] [ThreadPool]: Creating schema "database: "banking"
+schema: "main"
+"
+[0m17:24:32.432818 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:24:32.433060 [debug] [ThreadPool]: On create_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "create_banking_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='banking'
+        and type='sqlite'
+    
+  
+[0m17:24:32.433266 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:24:32.434002 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:24:32.434925 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:24:32.435130 [debug] [ThreadPool]: On create_banking_main: BEGIN
+[0m17:24:32.435434 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:24:32.435639 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:24:32.435916 [debug] [ThreadPool]: On create_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "create_banking_main"} */
+
+    
+    
+        create schema if not exists "banking"."main"
+    
+[0m17:24:32.436305 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:24:32.436896 [debug] [ThreadPool]: On create_banking_main: COMMIT
+[0m17:24:32.437101 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:24:32.437277 [debug] [ThreadPool]: On create_banking_main: COMMIT
+[0m17:24:32.437600 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:24:32.437921 [debug] [ThreadPool]: On create_banking_main: Close
+[0m17:24:32.439561 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_banking_main'
+[0m17:24:32.443221 [debug] [ThreadPool]: Using duckdb connection "list_banking_main"
+[0m17:24:32.443453 [debug] [ThreadPool]: On list_banking_main: BEGIN
+[0m17:24:32.443662 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:24:32.444141 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:24:32.444368 [debug] [ThreadPool]: Using duckdb connection "list_banking_main"
+[0m17:24:32.444558 [debug] [ThreadPool]: On list_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "list_banking_main"} */
+select
+      'banking' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'banking'
+  
+[0m17:24:32.456348 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m17:24:32.457967 [debug] [ThreadPool]: On list_banking_main: ROLLBACK
+[0m17:24:32.459071 [debug] [ThreadPool]: Failed to rollback 'list_banking_main'
+[0m17:24:32.459333 [debug] [ThreadPool]: On list_banking_main: Close
+[0m17:24:32.460969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0D7B4E20>]}
+[0m17:24:32.461377 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:24:32.461607 [debug] [MainThread]: On master: BEGIN
+[0m17:24:32.461778 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:24:32.462153 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:24:32.462366 [debug] [MainThread]: On master: COMMIT
+[0m17:24:32.462542 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:24:32.462726 [debug] [MainThread]: On master: COMMIT
+[0m17:24:32.463082 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:24:32.463307 [debug] [MainThread]: On master: Close
+[0m17:24:32.466936 [debug] [Thread-1 (]: Began running node model.dbt_practice.stg_accounts
+[0m17:24:32.467421 [info ] [Thread-1 (]: 1 of 7 START sql view model main.stg_accounts .................................. [RUN]
+[0m17:24:32.468241 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.dbt_practice.stg_accounts'
+[0m17:24:32.468513 [debug] [Thread-1 (]: Began compiling node model.dbt_practice.stg_accounts
+[0m17:24:32.473760 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_practice.stg_accounts"
+[0m17:24:32.474381 [debug] [Thread-1 (]: Began executing node model.dbt_practice.stg_accounts
+[0m17:24:32.498268 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_practice.stg_accounts"
+[0m17:24:32.499298 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_accounts"
+[0m17:24:32.499781 [debug] [Thread-1 (]: On model.dbt_practice.stg_accounts: BEGIN
+[0m17:24:32.500000 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:24:32.500634 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m17:24:32.500895 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_accounts"
+[0m17:24:32.501127 [debug] [Thread-1 (]: On model.dbt_practice.stg_accounts: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_accounts"} */
+
+  
+  create view "banking"."main"."stg_accounts__dbt_tmp" as (
+    select
+  account_id,
+  customer_id,
+  account_type,
+  cast(open_date as date) as open_date
+from "banking"."main"."accounts"
+  );
+
+[0m17:24:32.501673 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.506082 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_accounts"
+[0m17:24:32.506350 [debug] [Thread-1 (]: On model.dbt_practice.stg_accounts: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_accounts"} */
+alter view "banking"."main"."stg_accounts" rename to "stg_accounts__dbt_backup"
+[0m17:24:32.506812 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.508652 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_accounts"
+[0m17:24:32.508951 [debug] [Thread-1 (]: On model.dbt_practice.stg_accounts: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_accounts"} */
+alter view "banking"."main"."stg_accounts__dbt_tmp" rename to "stg_accounts"
+[0m17:24:32.509502 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.519422 [debug] [Thread-1 (]: On model.dbt_practice.stg_accounts: COMMIT
+[0m17:24:32.519777 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_accounts"
+[0m17:24:32.520015 [debug] [Thread-1 (]: On model.dbt_practice.stg_accounts: COMMIT
+[0m17:24:32.524466 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m17:24:32.528699 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_accounts"
+[0m17:24:32.528975 [debug] [Thread-1 (]: On model.dbt_practice.stg_accounts: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_accounts"} */
+
+      drop view if exists "banking"."main"."stg_accounts__dbt_backup" cascade
+    
+[0m17:24:32.531573 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.533352 [debug] [Thread-1 (]: On model.dbt_practice.stg_accounts: Close
+[0m17:24:32.534849 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0D8947D0>]}
+[0m17:24:32.535387 [info ] [Thread-1 (]: 1 of 7 OK created sql view model main.stg_accounts ............................. [[32mOK[0m in 0.07s]
+[0m17:24:32.536499 [debug] [Thread-1 (]: Finished running node model.dbt_practice.stg_accounts
+[0m17:24:32.537096 [debug] [Thread-1 (]: Began running node model.dbt_practice.stg_customers
+[0m17:24:32.537593 [info ] [Thread-1 (]: 2 of 7 START sql view model main.stg_customers ................................. [RUN]
+[0m17:24:32.538149 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_practice.stg_accounts, now model.dbt_practice.stg_customers)
+[0m17:24:32.538410 [debug] [Thread-1 (]: Began compiling node model.dbt_practice.stg_customers
+[0m17:24:32.540107 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_practice.stg_customers"
+[0m17:24:32.540635 [debug] [Thread-1 (]: Began executing node model.dbt_practice.stg_customers
+[0m17:24:32.542912 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_practice.stg_customers"
+[0m17:24:32.543456 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_customers"
+[0m17:24:32.543718 [debug] [Thread-1 (]: On model.dbt_practice.stg_customers: BEGIN
+[0m17:24:32.543942 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:24:32.544375 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.544606 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_customers"
+[0m17:24:32.544828 [debug] [Thread-1 (]: On model.dbt_practice.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_customers"} */
+
+  
+  create view "banking"."main"."stg_customers__dbt_tmp" as (
+    select
+  customer_id,
+  first_name,
+  last_name,
+  email,
+  cast(join_date as date) as join_date
+from "banking"."main"."customers"
+  );
+
+[0m17:24:32.545395 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.547434 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_customers"
+[0m17:24:32.547704 [debug] [Thread-1 (]: On model.dbt_practice.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_customers"} */
+alter view "banking"."main"."stg_customers" rename to "stg_customers__dbt_backup"
+[0m17:24:32.548197 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.549985 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_customers"
+[0m17:24:32.550246 [debug] [Thread-1 (]: On model.dbt_practice.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_customers"} */
+alter view "banking"."main"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m17:24:32.550744 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.551977 [debug] [Thread-1 (]: On model.dbt_practice.stg_customers: COMMIT
+[0m17:24:32.552238 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_customers"
+[0m17:24:32.552518 [debug] [Thread-1 (]: On model.dbt_practice.stg_customers: COMMIT
+[0m17:24:32.555083 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.556484 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_customers"
+[0m17:24:32.556737 [debug] [Thread-1 (]: On model.dbt_practice.stg_customers: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_customers"} */
+
+      drop view if exists "banking"."main"."stg_customers__dbt_backup" cascade
+    
+[0m17:24:32.559110 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.560114 [debug] [Thread-1 (]: On model.dbt_practice.stg_customers: Close
+[0m17:24:32.560530 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0D8AC310>]}
+[0m17:24:32.561104 [info ] [Thread-1 (]: 2 of 7 OK created sql view model main.stg_customers ............................ [[32mOK[0m in 0.02s]
+[0m17:24:32.561832 [debug] [Thread-1 (]: Finished running node model.dbt_practice.stg_customers
+[0m17:24:32.562301 [debug] [Thread-1 (]: Began running node model.dbt_practice.stg_transactions
+[0m17:24:32.562770 [info ] [Thread-1 (]: 3 of 7 START sql view model main.stg_transactions .............................. [RUN]
+[0m17:24:32.563478 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_practice.stg_customers, now model.dbt_practice.stg_transactions)
+[0m17:24:32.563798 [debug] [Thread-1 (]: Began compiling node model.dbt_practice.stg_transactions
+[0m17:24:32.565683 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_practice.stg_transactions"
+[0m17:24:32.566334 [debug] [Thread-1 (]: Began executing node model.dbt_practice.stg_transactions
+[0m17:24:32.570854 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_practice.stg_transactions"
+[0m17:24:32.571484 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_transactions"
+[0m17:24:32.571753 [debug] [Thread-1 (]: On model.dbt_practice.stg_transactions: BEGIN
+[0m17:24:32.571982 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:24:32.572488 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.572716 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_transactions"
+[0m17:24:32.572933 [debug] [Thread-1 (]: On model.dbt_practice.stg_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_transactions"} */
+
+  
+  create view "banking"."main"."stg_transactions__dbt_tmp" as (
+    select
+  txn_id,
+  account_id,
+  cast(txn_date as date) as txn_date,
+  amount,
+  txn_type
+from "banking"."main"."transactions"
+  );
+
+[0m17:24:32.573511 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.575532 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_transactions"
+[0m17:24:32.575828 [debug] [Thread-1 (]: On model.dbt_practice.stg_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_transactions"} */
+alter view "banking"."main"."stg_transactions" rename to "stg_transactions__dbt_backup"
+[0m17:24:32.576329 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.578478 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_transactions"
+[0m17:24:32.578748 [debug] [Thread-1 (]: On model.dbt_practice.stg_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_transactions"} */
+alter view "banking"."main"."stg_transactions__dbt_tmp" rename to "stg_transactions"
+[0m17:24:32.579339 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.580399 [debug] [Thread-1 (]: On model.dbt_practice.stg_transactions: COMMIT
+[0m17:24:32.580665 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_transactions"
+[0m17:24:32.580899 [debug] [Thread-1 (]: On model.dbt_practice.stg_transactions: COMMIT
+[0m17:24:32.583658 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.633218 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.stg_transactions"
+[0m17:24:32.633601 [debug] [Thread-1 (]: On model.dbt_practice.stg_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.stg_transactions"} */
+
+      drop view if exists "banking"."main"."stg_transactions__dbt_backup" cascade
+    
+[0m17:24:32.636406 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.637459 [debug] [Thread-1 (]: On model.dbt_practice.stg_transactions: Close
+[0m17:24:32.637875 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0D8B6D50>]}
+[0m17:24:32.638332 [info ] [Thread-1 (]: 3 of 7 OK created sql view model main.stg_transactions ......................... [[32mOK[0m in 0.07s]
+[0m17:24:32.639094 [debug] [Thread-1 (]: Finished running node model.dbt_practice.stg_transactions
+[0m17:24:32.639374 [debug] [Thread-1 (]: Began running node model.dbt_practice.dim_customers
+[0m17:24:32.639689 [info ] [Thread-1 (]: 4 of 7 START sql table model main.dim_customers ................................ [RUN]
+[0m17:24:32.640248 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_practice.stg_transactions, now model.dbt_practice.dim_customers)
+[0m17:24:32.640498 [debug] [Thread-1 (]: Began compiling node model.dbt_practice.dim_customers
+[0m17:24:32.642677 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_practice.dim_customers"
+[0m17:24:32.643597 [debug] [Thread-1 (]: Began executing node model.dbt_practice.dim_customers
+[0m17:24:32.657833 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_practice.dim_customers"
+[0m17:24:32.658508 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_customers"
+[0m17:24:32.658946 [debug] [Thread-1 (]: On model.dbt_practice.dim_customers: BEGIN
+[0m17:24:32.659303 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:24:32.659849 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m17:24:32.660084 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_customers"
+[0m17:24:32.660381 [debug] [Thread-1 (]: On model.dbt_practice.dim_customers: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.dim_customers"} */
+
+  
+    
+    
+
+    create  table
+      "banking"."main"."dim_customers__dbt_tmp"
+  
+    as (
+      select
+  customer_id,
+  first_name,
+  last_name,
+  email,
+  join_date
+from "banking"."main"."stg_customers"
+    );
+  
+  
+[0m17:24:32.661840 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m17:24:32.663937 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_customers"
+[0m17:24:32.664203 [debug] [Thread-1 (]: On model.dbt_practice.dim_customers: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.dim_customers"} */
+alter table "banking"."main"."dim_customers" rename to "dim_customers__dbt_backup"
+[0m17:24:32.664737 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.666632 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_customers"
+[0m17:24:32.666891 [debug] [Thread-1 (]: On model.dbt_practice.dim_customers: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.dim_customers"} */
+alter table "banking"."main"."dim_customers__dbt_tmp" rename to "dim_customers"
+[0m17:24:32.667329 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.671375 [debug] [Thread-1 (]: On model.dbt_practice.dim_customers: COMMIT
+[0m17:24:32.671654 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_customers"
+[0m17:24:32.671891 [debug] [Thread-1 (]: On model.dbt_practice.dim_customers: COMMIT
+[0m17:24:32.674422 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.675897 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_customers"
+[0m17:24:32.676187 [debug] [Thread-1 (]: On model.dbt_practice.dim_customers: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.dim_customers"} */
+
+      drop table if exists "banking"."main"."dim_customers__dbt_backup" cascade
+    
+[0m17:24:32.678866 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.679904 [debug] [Thread-1 (]: On model.dbt_practice.dim_customers: Close
+[0m17:24:32.680317 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0706BDD0>]}
+[0m17:24:32.680780 [info ] [Thread-1 (]: 4 of 7 OK created sql table model main.dim_customers ........................... [[32mOK[0m in 0.04s]
+[0m17:24:32.681461 [debug] [Thread-1 (]: Finished running node model.dbt_practice.dim_customers
+[0m17:24:32.682120 [debug] [Thread-1 (]: Began running node model.dbt_practice.dim_accounts
+[0m17:24:32.682621 [info ] [Thread-1 (]: 5 of 7 START sql table model main.dim_accounts ................................. [RUN]
+[0m17:24:32.683143 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_practice.dim_customers, now model.dbt_practice.dim_accounts)
+[0m17:24:32.683418 [debug] [Thread-1 (]: Began compiling node model.dbt_practice.dim_accounts
+[0m17:24:32.685361 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_practice.dim_accounts"
+[0m17:24:32.686087 [debug] [Thread-1 (]: Began executing node model.dbt_practice.dim_accounts
+[0m17:24:32.688708 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_practice.dim_accounts"
+[0m17:24:32.689292 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_accounts"
+[0m17:24:32.689588 [debug] [Thread-1 (]: On model.dbt_practice.dim_accounts: BEGIN
+[0m17:24:32.689821 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:24:32.690259 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.690498 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_accounts"
+[0m17:24:32.690726 [debug] [Thread-1 (]: On model.dbt_practice.dim_accounts: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.dim_accounts"} */
+
+  
+    
+    
+
+    create  table
+      "banking"."main"."dim_accounts__dbt_tmp"
+  
+    as (
+      select
+  a.account_id,
+  a.account_type,
+  a.open_date,
+  c.customer_id,
+  c.first_name,
+  c.last_name
+from "banking"."main"."stg_accounts" a
+join "banking"."main"."dim_customers" c on a.customer_id = c.customer_id
+    );
+  
+  
+[0m17:24:32.692992 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.695654 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_accounts"
+[0m17:24:32.695995 [debug] [Thread-1 (]: On model.dbt_practice.dim_accounts: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.dim_accounts"} */
+alter table "banking"."main"."dim_accounts" rename to "dim_accounts__dbt_backup"
+[0m17:24:32.696627 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.698642 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_accounts"
+[0m17:24:32.698911 [debug] [Thread-1 (]: On model.dbt_practice.dim_accounts: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.dim_accounts"} */
+alter table "banking"."main"."dim_accounts__dbt_tmp" rename to "dim_accounts"
+[0m17:24:32.699422 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.700433 [debug] [Thread-1 (]: On model.dbt_practice.dim_accounts: COMMIT
+[0m17:24:32.700708 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_accounts"
+[0m17:24:32.700936 [debug] [Thread-1 (]: On model.dbt_practice.dim_accounts: COMMIT
+[0m17:24:32.703554 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.705210 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.dim_accounts"
+[0m17:24:32.705476 [debug] [Thread-1 (]: On model.dbt_practice.dim_accounts: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.dim_accounts"} */
+
+      drop table if exists "banking"."main"."dim_accounts__dbt_backup" cascade
+    
+[0m17:24:32.708023 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.709177 [debug] [Thread-1 (]: On model.dbt_practice.dim_accounts: Close
+[0m17:24:32.709714 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0D8E8A60>]}
+[0m17:24:32.710400 [info ] [Thread-1 (]: 5 of 7 OK created sql table model main.dim_accounts ............................ [[32mOK[0m in 0.03s]
+[0m17:24:32.711102 [debug] [Thread-1 (]: Finished running node model.dbt_practice.dim_accounts
+[0m17:24:32.711804 [debug] [Thread-1 (]: Began running node model.dbt_practice.daily_account_balances
+[0m17:24:32.712236 [info ] [Thread-1 (]: 6 of 7 START sql table model main.daily_account_balances ....................... [RUN]
+[0m17:24:32.712716 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_practice.dim_accounts, now model.dbt_practice.daily_account_balances)
+[0m17:24:32.712975 [debug] [Thread-1 (]: Began compiling node model.dbt_practice.daily_account_balances
+[0m17:24:32.716187 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_practice.daily_account_balances"
+[0m17:24:32.716924 [debug] [Thread-1 (]: Began executing node model.dbt_practice.daily_account_balances
+[0m17:24:32.719574 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_practice.daily_account_balances"
+[0m17:24:32.720394 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.daily_account_balances"
+[0m17:24:32.720666 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: BEGIN
+[0m17:24:32.720928 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:24:32.721451 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m17:24:32.721698 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.daily_account_balances"
+[0m17:24:32.721973 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.daily_account_balances"} */
+
+  
+    
+    
+
+    create  table
+      "banking"."main"."daily_account_balances__dbt_tmp"
+  
+    as (
+      with date_spine as (
+
+    
+(
+    with recursive dates as (
+        select cast('2021-01-01' as date) as d
+        union all
+        select d + interval 1 day
+        from dates
+        where d + interval 1 day <= cast('2021-12-31' as date)
+    )
+    select d as date_day from dates
+)
+
+
+),
+
+transactions as (
+    select
+        t.account_id,
+        t.txn_date,
+        sum(t.amount) over (
+            partition by t.account_id
+            order by t.txn_date
+            rows between unbounded preceding and current row
+        ) as running_balance
+    from "banking"."main"."stg_transactions" t
+),
+
+daily_balances as (
+    select
+        d.date_day,
+        a.account_id,
+        coalesce(
+            max(t.running_balance) filter (where t.txn_date <= d.date_day),
+            0
+        ) as balance
+    from date_spine d
+    cross join "banking"."main"."dim_accounts" a
+    left join transactions t 
+        on a.account_id = t.account_id
+    group by d.date_day, a.account_id
+)
+
+select * from daily_balances
+order by account_id, date_day
+    );
+  
+  
+[0m17:24:32.742830 [debug] [Thread-1 (]: SQL status: OK in 0.020 seconds
+[0m17:24:32.745312 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.daily_account_balances"
+[0m17:24:32.745654 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.daily_account_balances"} */
+alter table "banking"."main"."daily_account_balances__dbt_tmp" rename to "daily_account_balances"
+[0m17:24:32.746296 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.747332 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: COMMIT
+[0m17:24:32.747612 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.daily_account_balances"
+[0m17:24:32.747871 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: COMMIT
+[0m17:24:32.754656 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m17:24:32.756138 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.daily_account_balances"
+[0m17:24:32.756423 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.daily_account_balances"} */
+
+      drop table if exists "banking"."main"."daily_account_balances__dbt_backup" cascade
+    
+[0m17:24:32.756870 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.757867 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: Close
+[0m17:24:32.758295 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0D76A930>]}
+[0m17:24:32.758778 [info ] [Thread-1 (]: 6 of 7 OK created sql table model main.daily_account_balances .................. [[32mOK[0m in 0.05s]
+[0m17:24:32.759458 [debug] [Thread-1 (]: Finished running node model.dbt_practice.daily_account_balances
+[0m17:24:32.759768 [debug] [Thread-1 (]: Began running node model.dbt_practice.fact_transactions
+[0m17:24:32.760303 [info ] [Thread-1 (]: 7 of 7 START sql table model main.fact_transactions ............................ [RUN]
+[0m17:24:32.760999 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_practice.daily_account_balances, now model.dbt_practice.fact_transactions)
+[0m17:24:32.761273 [debug] [Thread-1 (]: Began compiling node model.dbt_practice.fact_transactions
+[0m17:24:32.763950 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_practice.fact_transactions"
+[0m17:24:32.764642 [debug] [Thread-1 (]: Began executing node model.dbt_practice.fact_transactions
+[0m17:24:32.766953 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_practice.fact_transactions"
+[0m17:24:32.767574 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:24:32.767842 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: BEGIN
+[0m17:24:32.768067 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:24:32.768546 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.768774 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:24:32.769007 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.fact_transactions"} */
+
+  
+    
+    
+
+    create  table
+      "banking"."main"."fact_transactions__dbt_tmp"
+  
+    as (
+      select
+  t.txn_id,
+  t.txn_date,
+  t.amount,
+  t.txn_type,
+  a.account_id,
+  c.customer_id
+from "banking"."main"."stg_transactions" t
+join "banking"."main"."dim_accounts" a on t.account_id = a.account_id
+join "banking"."main"."dim_customers" c on a.customer_id = c.customer_id
+    );
+  
+  
+[0m17:24:32.770667 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m17:24:32.772460 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:24:32.772950 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.fact_transactions"} */
+alter table "banking"."main"."fact_transactions" rename to "fact_transactions__dbt_backup"
+[0m17:24:32.773447 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.775383 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:24:32.775734 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.fact_transactions"} */
+alter table "banking"."main"."fact_transactions__dbt_tmp" rename to "fact_transactions"
+[0m17:24:32.776384 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:32.777528 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: COMMIT
+[0m17:24:32.777949 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:24:32.778219 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: COMMIT
+[0m17:24:32.780860 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.782662 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:24:32.782922 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.fact_transactions"} */
+
+      drop table if exists "banking"."main"."fact_transactions__dbt_backup" cascade
+    
+[0m17:24:32.785467 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:32.786452 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: Close
+[0m17:24:32.786862 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6be047e6-fda8-4f53-b409-efeff0b5945a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0D070A10>]}
+[0m17:24:32.787333 [info ] [Thread-1 (]: 7 of 7 OK created sql table model main.fact_transactions ....................... [[32mOK[0m in 0.03s]
+[0m17:24:32.788079 [debug] [Thread-1 (]: Finished running node model.dbt_practice.fact_transactions
+[0m17:24:32.789243 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:24:32.789869 [debug] [MainThread]: On master: BEGIN
+[0m17:24:32.790285 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:24:32.790769 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:24:32.790976 [debug] [MainThread]: On master: COMMIT
+[0m17:24:32.791196 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:24:32.791396 [debug] [MainThread]: On master: COMMIT
+[0m17:24:32.791719 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:24:32.791922 [debug] [MainThread]: On master: Close
+[0m17:24:32.792254 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:24:32.792562 [debug] [MainThread]: Connection 'create_banking_main' was properly closed.
+[0m17:24:32.792801 [debug] [MainThread]: Connection 'list_banking_main' was properly closed.
+[0m17:24:32.792967 [debug] [MainThread]: Connection 'model.dbt_practice.fact_transactions' was properly closed.
+[0m17:24:32.793259 [info ] [MainThread]: 
+[0m17:24:32.793702 [info ] [MainThread]: Finished running 4 table models, 3 view models in 0 hours 0 minutes and 0.48 seconds (0.48s).
+[0m17:24:32.795065 [debug] [MainThread]: Command end result
+[0m17:24:32.811905 [debug] [MainThread]: Wrote artifact WritableManifest to D:\workspace\github\dbt_practice\target\manifest.json
+[0m17:24:32.814329 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\workspace\github\dbt_practice\target\semantic_manifest.json
+[0m17:24:32.819100 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\workspace\github\dbt_practice\target\run_results.json
+[0m17:24:32.819334 [info ] [MainThread]: 
+[0m17:24:32.819765 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:24:32.820055 [info ] [MainThread]: 
+[0m17:24:32.820345 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m17:24:32.821078 [debug] [MainThread]: Command `dbt run` succeeded at 17:24:32.820992 after 1.29 seconds
+[0m17:24:32.821336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0B712810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0AD35490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019D0D8CB9B0>]}
+[0m17:24:32.821585 [debug] [MainThread]: Flushing usage events
+[0m17:24:33.891307 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:26:14.312554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C183180980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C18517BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C18517B890>]}
+
+
+============================== 17:26:14.316518 | 2b94a8db-b1d3-45d2-943e-2a979c395d83 ==============================
+[0m17:26:14.316518 [info ] [MainThread]: Running with dbt=1.10.10
+[0m17:26:14.317210 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run --select fact_transactions', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'False', 'printer_width': '80', 'quiet': 'False', 'log_path': 'D:\\workspace\\github\\dbt_practice\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'D:\\workspace\\github\\dbt_practice'}
+[0m17:26:14.488958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2b94a8db-b1d3-45d2-943e-2a979c395d83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C183387A80>]}
+[0m17:26:14.540191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2b94a8db-b1d3-45d2-943e-2a979c395d83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C185072BE0>]}
+[0m17:26:14.542403 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m17:26:14.757402 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m17:26:14.875541 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:26:14.875854 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:26:14.913211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2b94a8db-b1d3-45d2-943e-2a979c395d83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C185710E50>]}
+[0m17:26:14.968783 [debug] [MainThread]: Wrote artifact WritableManifest to D:\workspace\github\dbt_practice\target\manifest.json
+[0m17:26:14.970887 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\workspace\github\dbt_practice\target\semantic_manifest.json
+[0m17:26:14.989544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2b94a8db-b1d3-45d2-943e-2a979c395d83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1854EF2F0>]}
+[0m17:26:14.989895 [info ] [MainThread]: Found 7 models, 3 seeds, 8 data tests, 431 macros
+[0m17:26:14.990360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b94a8db-b1d3-45d2-943e-2a979c395d83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1852CFA10>]}
+[0m17:26:14.991558 [info ] [MainThread]: 
+[0m17:26:14.991950 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:26:14.992315 [info ] [MainThread]: 
+[0m17:26:14.992840 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m17:26:14.993686 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_banking'
+[0m17:26:15.072338 [debug] [ThreadPool]: Using duckdb connection "list_banking"
+[0m17:26:15.072669 [debug] [ThreadPool]: On list_banking: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "list_banking"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"banking"'
+    
+  
+  
+[0m17:26:15.072896 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:26:15.095763 [debug] [ThreadPool]: SQL status: OK in 0.023 seconds
+[0m17:26:15.096872 [debug] [ThreadPool]: On list_banking: Close
+[0m17:26:15.097562 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_banking, now create_banking_main)
+[0m17:26:15.097918 [debug] [ThreadPool]: Creating schema "database: "banking"
+schema: "main"
+"
+[0m17:26:15.102521 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:26:15.102767 [debug] [ThreadPool]: On create_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "create_banking_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='banking'
+        and type='sqlite'
+    
+  
+[0m17:26:15.102990 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:26:15.103594 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:26:15.104461 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:26:15.104676 [debug] [ThreadPool]: On create_banking_main: BEGIN
+[0m17:26:15.104979 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:26:15.105167 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:26:15.105352 [debug] [ThreadPool]: On create_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "create_banking_main"} */
+
+    
+    
+        create schema if not exists "banking"."main"
+    
+[0m17:26:15.105700 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:26:15.106279 [debug] [ThreadPool]: On create_banking_main: COMMIT
+[0m17:26:15.106484 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:26:15.106666 [debug] [ThreadPool]: On create_banking_main: COMMIT
+[0m17:26:15.107095 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:26:15.107314 [debug] [ThreadPool]: On create_banking_main: Close
+[0m17:26:15.112152 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_banking_main'
+[0m17:26:15.115683 [debug] [ThreadPool]: Using duckdb connection "list_banking_main"
+[0m17:26:15.115917 [debug] [ThreadPool]: On list_banking_main: BEGIN
+[0m17:26:15.116097 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:26:15.116789 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:26:15.116983 [debug] [ThreadPool]: Using duckdb connection "list_banking_main"
+[0m17:26:15.117175 [debug] [ThreadPool]: On list_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "list_banking_main"} */
+select
+      'banking' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'banking'
+  
+[0m17:26:15.127848 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m17:26:15.128832 [debug] [ThreadPool]: On list_banking_main: ROLLBACK
+[0m17:26:15.129735 [debug] [ThreadPool]: Failed to rollback 'list_banking_main'
+[0m17:26:15.129960 [debug] [ThreadPool]: On list_banking_main: Close
+[0m17:26:15.131665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b94a8db-b1d3-45d2-943e-2a979c395d83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C185AB8C80>]}
+[0m17:26:15.132001 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:26:15.132204 [debug] [MainThread]: On master: BEGIN
+[0m17:26:15.132382 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:26:15.132700 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:26:15.132889 [debug] [MainThread]: On master: COMMIT
+[0m17:26:15.133071 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:26:15.133240 [debug] [MainThread]: On master: COMMIT
+[0m17:26:15.133555 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:26:15.133764 [debug] [MainThread]: On master: Close
+[0m17:26:15.137489 [debug] [Thread-1 (]: Began running node model.dbt_practice.fact_transactions
+[0m17:26:15.137873 [info ] [Thread-1 (]: 1 of 1 START sql table model main.fact_transactions ............................ [RUN]
+[0m17:26:15.138596 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.dbt_practice.fact_transactions'
+[0m17:26:15.138859 [debug] [Thread-1 (]: Began compiling node model.dbt_practice.fact_transactions
+[0m17:26:15.144065 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_practice.fact_transactions"
+[0m17:26:15.144613 [debug] [Thread-1 (]: Began executing node model.dbt_practice.fact_transactions
+[0m17:26:15.167911 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_practice.fact_transactions"
+[0m17:26:15.168754 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:26:15.169185 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: BEGIN
+[0m17:26:15.169424 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:26:15.170054 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m17:26:15.170318 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:26:15.170574 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.fact_transactions"} */
+
+  
+    
+    
+
+    create  table
+      "banking"."main"."fact_transactions__dbt_tmp"
+  
+    as (
+      select
+  t.txn_id,
+  t.txn_date,
+  t.amount,
+  t.txn_type,
+  a.account_id,
+  c.customer_id
+from "banking"."main"."stg_transactions" t
+join "banking"."main"."dim_accounts" a on t.account_id = a.account_id
+join "banking"."main"."dim_customers" c on a.customer_id = c.customer_id
+    );
+  
+  
+[0m17:26:15.173111 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:26:15.177400 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:26:15.177665 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.fact_transactions"} */
+alter table "banking"."main"."fact_transactions" rename to "fact_transactions__dbt_backup"
+[0m17:26:15.178196 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:26:15.180334 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:26:15.180613 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.fact_transactions"} */
+alter table "banking"."main"."fact_transactions__dbt_tmp" rename to "fact_transactions"
+[0m17:26:15.181096 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:26:15.193033 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: COMMIT
+[0m17:26:15.193332 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:26:15.193560 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: COMMIT
+[0m17:26:15.198221 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m17:26:15.202359 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.fact_transactions"
+[0m17:26:15.202712 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.fact_transactions"} */
+
+      drop table if exists "banking"."main"."fact_transactions__dbt_backup" cascade
+    
+[0m17:26:15.205379 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:26:15.207099 [debug] [Thread-1 (]: On model.dbt_practice.fact_transactions: Close
+[0m17:26:15.208636 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2b94a8db-b1d3-45d2-943e-2a979c395d83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C185B80A10>]}
+[0m17:26:15.209108 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.fact_transactions ....................... [[32mOK[0m in 0.07s]
+[0m17:26:15.209872 [debug] [Thread-1 (]: Finished running node model.dbt_practice.fact_transactions
+[0m17:26:15.211290 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:26:15.211513 [debug] [MainThread]: On master: BEGIN
+[0m17:26:15.211699 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:26:15.212047 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:26:15.212245 [debug] [MainThread]: On master: COMMIT
+[0m17:26:15.212420 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:26:15.212589 [debug] [MainThread]: On master: COMMIT
+[0m17:26:15.212902 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:26:15.213115 [debug] [MainThread]: On master: Close
+[0m17:26:15.213368 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:26:15.213537 [debug] [MainThread]: Connection 'create_banking_main' was properly closed.
+[0m17:26:15.213694 [debug] [MainThread]: Connection 'list_banking_main' was properly closed.
+[0m17:26:15.213835 [debug] [MainThread]: Connection 'model.dbt_practice.fact_transactions' was properly closed.
+[0m17:26:15.214022 [info ] [MainThread]: 
+[0m17:26:15.214450 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.22 seconds (0.22s).
+[0m17:26:15.215142 [debug] [MainThread]: Command end result
+[0m17:26:15.232731 [debug] [MainThread]: Wrote artifact WritableManifest to D:\workspace\github\dbt_practice\target\manifest.json
+[0m17:26:15.234763 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\workspace\github\dbt_practice\target\semantic_manifest.json
+[0m17:26:15.239067 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\workspace\github\dbt_practice\target\run_results.json
+[0m17:26:15.239287 [info ] [MainThread]: 
+[0m17:26:15.239702 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:26:15.240115 [info ] [MainThread]: 
+[0m17:26:15.240507 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:26:15.241302 [debug] [MainThread]: Command `dbt run` succeeded at 17:26:15.241212 after 1.02 seconds
+[0m17:26:15.241558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1857B1F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1857C7C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1857C7A70>]}
+[0m17:26:15.241818 [debug] [MainThread]: Flushing usage events
+[0m17:26:16.356491 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:26:44.388512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B142490980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B14447BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B14447B890>]}
+
+
+============================== 17:26:44.392589 | 439ac120-d0b6-4468-bd05-983cf25ec349 ==============================
+[0m17:26:44.392589 [info ] [MainThread]: Running with dbt=1.10.10
+[0m17:26:44.393287 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt run --select daily_account_balances', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'use_experimental_parser': 'False', 'quiet': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'D:\\workspace\\github\\dbt_practice\\logs', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'D:\\workspace\\github\\dbt_practice'}
+[0m17:26:44.559746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '439ac120-d0b6-4468-bd05-983cf25ec349', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B142697A80>]}
+[0m17:26:44.607377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '439ac120-d0b6-4468-bd05-983cf25ec349', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B144372BE0>]}
+[0m17:26:44.609505 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m17:26:44.826327 [debug] [MainThread]: checksum: 502a0dc23e9052e1ae09f7c44ee219ef7a02dfea7e7d66580d54c304c14d553b, vars: {}, profile: , target: , version: 1.10.10
+[0m17:26:44.943313 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:26:44.943633 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:26:44.982726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '439ac120-d0b6-4468-bd05-983cf25ec349', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B144744E50>]}
+[0m17:26:45.040895 [debug] [MainThread]: Wrote artifact WritableManifest to D:\workspace\github\dbt_practice\target\manifest.json
+[0m17:26:45.042841 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\workspace\github\dbt_practice\target\semantic_manifest.json
+[0m17:26:45.061312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '439ac120-d0b6-4468-bd05-983cf25ec349', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B1447EF2F0>]}
+[0m17:26:45.061732 [info ] [MainThread]: Found 7 models, 3 seeds, 8 data tests, 431 macros
+[0m17:26:45.062218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '439ac120-d0b6-4468-bd05-983cf25ec349', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B1445CFA10>]}
+[0m17:26:45.063439 [info ] [MainThread]: 
+[0m17:26:45.063876 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:26:45.064157 [info ] [MainThread]: 
+[0m17:26:45.064551 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m17:26:45.065399 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_banking'
+[0m17:26:45.134783 [debug] [ThreadPool]: Using duckdb connection "list_banking"
+[0m17:26:45.135147 [debug] [ThreadPool]: On list_banking: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "list_banking"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"banking"'
+    
+  
+  
+[0m17:26:45.135388 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:26:45.158777 [debug] [ThreadPool]: SQL status: OK in 0.023 seconds
+[0m17:26:45.160078 [debug] [ThreadPool]: On list_banking: Close
+[0m17:26:45.160665 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_banking, now create_banking_main)
+[0m17:26:45.161079 [debug] [ThreadPool]: Creating schema "database: "banking"
+schema: "main"
+"
+[0m17:26:45.165930 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:26:45.166162 [debug] [ThreadPool]: On create_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "create_banking_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='banking'
+        and type='sqlite'
+    
+  
+[0m17:26:45.166366 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:26:45.167025 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:26:45.167918 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:26:45.168128 [debug] [ThreadPool]: On create_banking_main: BEGIN
+[0m17:26:45.168463 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:26:45.168661 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:26:45.168853 [debug] [ThreadPool]: On create_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "create_banking_main"} */
+
+    
+    
+        create schema if not exists "banking"."main"
+    
+[0m17:26:45.169205 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:26:45.169792 [debug] [ThreadPool]: On create_banking_main: COMMIT
+[0m17:26:45.170012 [debug] [ThreadPool]: Using duckdb connection "create_banking_main"
+[0m17:26:45.170197 [debug] [ThreadPool]: On create_banking_main: COMMIT
+[0m17:26:45.170506 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:26:45.170707 [debug] [ThreadPool]: On create_banking_main: Close
+[0m17:26:45.175166 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_banking_main'
+[0m17:26:45.178780 [debug] [ThreadPool]: Using duckdb connection "list_banking_main"
+[0m17:26:45.179005 [debug] [ThreadPool]: On list_banking_main: BEGIN
+[0m17:26:45.179186 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:26:45.180004 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:26:45.180229 [debug] [ThreadPool]: Using duckdb connection "list_banking_main"
+[0m17:26:45.180430 [debug] [ThreadPool]: On list_banking_main: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "connection_name": "list_banking_main"} */
+select
+      'banking' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'banking'
+  
+[0m17:26:45.191215 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m17:26:45.192331 [debug] [ThreadPool]: On list_banking_main: ROLLBACK
+[0m17:26:45.193257 [debug] [ThreadPool]: Failed to rollback 'list_banking_main'
+[0m17:26:45.193490 [debug] [ThreadPool]: On list_banking_main: Close
+[0m17:26:45.195124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '439ac120-d0b6-4468-bd05-983cf25ec349', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B144DBCC80>]}
+[0m17:26:45.195468 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:26:45.195674 [debug] [MainThread]: On master: BEGIN
+[0m17:26:45.195850 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:26:45.196202 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:26:45.196393 [debug] [MainThread]: On master: COMMIT
+[0m17:26:45.196577 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:26:45.196743 [debug] [MainThread]: On master: COMMIT
+[0m17:26:45.197052 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:26:45.197240 [debug] [MainThread]: On master: Close
+[0m17:26:45.200966 [debug] [Thread-1 (]: Began running node model.dbt_practice.daily_account_balances
+[0m17:26:45.201355 [info ] [Thread-1 (]: 1 of 1 START sql table model main.daily_account_balances ....................... [RUN]
+[0m17:26:45.201956 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.dbt_practice.daily_account_balances'
+[0m17:26:45.202230 [debug] [Thread-1 (]: Began compiling node model.dbt_practice.daily_account_balances
+[0m17:26:45.208358 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_practice.daily_account_balances"
+[0m17:26:45.208943 [debug] [Thread-1 (]: Began executing node model.dbt_practice.daily_account_balances
+[0m17:26:45.233534 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_practice.daily_account_balances"
+[0m17:26:45.234433 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.daily_account_balances"
+[0m17:26:45.234786 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: BEGIN
+[0m17:26:45.235032 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:26:45.235716 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m17:26:45.236056 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.daily_account_balances"
+[0m17:26:45.236347 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.daily_account_balances"} */
+
+  
+    
+    
+
+    create  table
+      "banking"."main"."daily_account_balances__dbt_tmp"
+  
+    as (
+      with date_spine as (
+
+    
+(
+    with recursive dates as (
+        select cast('2021-01-01' as date) as d
+        union all
+        select d + interval 1 day
+        from dates
+        where d + interval 1 day <= cast('2021-12-31' as date)
+    )
+    select d as date_day from dates
+)
+
+
+),
+
+transactions as (
+    select
+        t.account_id,
+        t.txn_date,
+        sum(t.amount) over (
+            partition by t.account_id
+            order by t.txn_date
+            rows between unbounded preceding and current row
+        ) as running_balance
+    from "banking"."main"."stg_transactions" t
+),
+
+daily_balances as (
+    select
+        d.date_day,
+        a.account_id,
+        coalesce(
+            max(t.running_balance) filter (where t.txn_date <= d.date_day),
+            0
+        ) as balance
+    from date_spine d
+    cross join "banking"."main"."dim_accounts" a
+    left join transactions t 
+        on a.account_id = t.account_id
+    group by d.date_day, a.account_id
+)
+
+select * from daily_balances
+order by account_id, date_day
+    );
+  
+  
+[0m17:26:45.258091 [debug] [Thread-1 (]: SQL status: OK in 0.021 seconds
+[0m17:26:45.263170 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.daily_account_balances"
+[0m17:26:45.263486 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.daily_account_balances"} */
+alter table "banking"."main"."daily_account_balances" rename to "daily_account_balances__dbt_backup"
+[0m17:26:45.264083 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:26:45.266138 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.daily_account_balances"
+[0m17:26:45.266528 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.daily_account_balances"} */
+alter table "banking"."main"."daily_account_balances__dbt_tmp" rename to "daily_account_balances"
+[0m17:26:45.267025 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:26:45.279060 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: COMMIT
+[0m17:26:45.279344 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.daily_account_balances"
+[0m17:26:45.279586 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: COMMIT
+[0m17:26:45.284146 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m17:26:45.287969 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_practice.daily_account_balances"
+[0m17:26:45.288234 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: /* {"app": "dbt", "dbt_version": "1.10.10", "profile_name": "banking_profile", "target_name": "dev", "node_id": "model.dbt_practice.daily_account_balances"} */
+
+      drop table if exists "banking"."main"."daily_account_balances__dbt_backup" cascade
+    
+[0m17:26:45.290786 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:26:45.292509 [debug] [Thread-1 (]: On model.dbt_practice.daily_account_balances: Close
+[0m17:26:45.294004 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '439ac120-d0b6-4468-bd05-983cf25ec349', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B144E8C410>]}
+[0m17:26:45.294602 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.daily_account_balances .................. [[32mOK[0m in 0.09s]
+[0m17:26:45.295387 [debug] [Thread-1 (]: Finished running node model.dbt_practice.daily_account_balances
+[0m17:26:45.296785 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:26:45.297059 [debug] [MainThread]: On master: BEGIN
+[0m17:26:45.297244 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:26:45.297606 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:26:45.297806 [debug] [MainThread]: On master: COMMIT
+[0m17:26:45.297983 [debug] [MainThread]: Using duckdb connection "master"
+[0m17:26:45.298152 [debug] [MainThread]: On master: COMMIT
+[0m17:26:45.298484 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:26:45.298687 [debug] [MainThread]: On master: Close
+[0m17:26:45.298933 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:26:45.299103 [debug] [MainThread]: Connection 'create_banking_main' was properly closed.
+[0m17:26:45.299258 [debug] [MainThread]: Connection 'list_banking_main' was properly closed.
+[0m17:26:45.299402 [debug] [MainThread]: Connection 'model.dbt_practice.daily_account_balances' was properly closed.
+[0m17:26:45.299597 [info ] [MainThread]: 
+[0m17:26:45.300073 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.24 seconds (0.24s).
+[0m17:26:45.300831 [debug] [MainThread]: Command end result
+[0m17:26:45.320227 [debug] [MainThread]: Wrote artifact WritableManifest to D:\workspace\github\dbt_practice\target\manifest.json
+[0m17:26:45.322620 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\workspace\github\dbt_practice\target\semantic_manifest.json
+[0m17:26:45.327470 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\workspace\github\dbt_practice\target\run_results.json
+[0m17:26:45.327892 [info ] [MainThread]: 
+[0m17:26:45.328521 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:26:45.328922 [info ] [MainThread]: 
+[0m17:26:45.329355 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:26:45.330221 [debug] [MainThread]: Command `dbt run` succeeded at 17:26:45.330120 after 1.03 seconds
+[0m17:26:45.330496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B144AB5F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B144AC3BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B144AC39D0>]}
+[0m17:26:45.330806 [debug] [MainThread]: Flushing usage events
+[0m17:26:46.197362 [debug] [MainThread]: An error was encountered while trying to flush usage events
