@@ -1,4 +1,3 @@
-banking.duckdb
 /logs
 /target
-/target
+*.duckdb
